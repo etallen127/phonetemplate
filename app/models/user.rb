@@ -5,4 +5,5 @@ class User < ActiveRecord::Base
   has_many :days, through::programs
   has_many :lifts, through::days
   has_many :lclasses, through::lifts
+  validates_uniqueness_of :username
 end

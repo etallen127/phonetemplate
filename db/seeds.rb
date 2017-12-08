@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+lifts = Lift.create([{ name: 'push-up', description: 'body weight exercise', video: 'https://www.youtube.com/watch?v=Eh00_rniF8E', difficulty: 3 }])

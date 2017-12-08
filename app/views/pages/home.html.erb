@@ -41,7 +41,15 @@
 </div>
 <div class='row'>
   <div class="boxes col s12 col m4 offset-m1">
-  </div>
+    <% @lifts.each do |lift| %>
+      <%= lift.name %>
+      <%= lift.description %>
+      <div class="video-container">
+        <iframe <%= video_tag lift.video %> frameborder="0" allowfullscreen></iframe>
+      </div>
+      <%= lift.difficulty %>
+    <% end %>
+</div>
 </div>
 <div class='row'>
   <div class="boxes col s12 col m4 offset-m1">
